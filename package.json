@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts,.tsx",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
   },
   "keywords": [],
   "author": "",

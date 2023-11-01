@@ -8,9 +8,7 @@ import {fetchStudentsSchema, registerUserSchema} from "./docs/swagger-schemas";
 
 const app = fastify()
 
-app.register(fastifySwagger, {
-  openapi:{}
-});
+app.register(fastifySwagger, swaggerOptions);
 app.register(fastifySwaggerUi, swaggerUiOptions);
 
 
