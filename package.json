@@ -1,0 +1,30 @@
+{
+  "name": "estagio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts,.tsx",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/client": "^5.5.2",
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/bcryptjs": "^2.4.5",
+    "@types/node": "^20.8.10",
+    "eslint": "^8.52.0",
+    "prisma": "^5.5.2",
+    "tsup": "^7.2.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "fastify": "^4.24.3",
+    "zod": "^3.22.4"
+  }
+}
