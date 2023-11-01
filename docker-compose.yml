@@ -12,3 +12,15 @@ services:
     volumes:
       - ./mysql_data:/var/lib/mysql
       - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+
+#version: '3'
+#
+#services:
+#  api-solid-pg:
+#    image: bitnami/postgresql
+#    ports:
+#      - 5432:5432
+#    environment:
+#      - POSTGRESQL_USERNAME=docker
+#      - POSTGRESQL_PASSWORD=docker
+#      - POSTGRESQL_DATABASE=upbase
